@@ -6,6 +6,27 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyBYQOeNhNwrkNBcNcIy_i53MgjfhVWTlf8",
+      authDomain: "chatapp-1c067.firebaseapp.com",
+      databaseURL: "https://chatapp-1c067.firebaseio.com",
+      storageBucket: "chatapp-1c067.appspot.com",
+
+    },
+    torii: {
+      sessionServiceName: 'session'
+    },
+
+    // if using ember-cli-content-security-policy
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
+
+    'simple-auth': {
+      serverTokenRevocationPoint: '/revoke'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

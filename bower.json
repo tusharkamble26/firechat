@@ -1,0 +1,21 @@
+{
+  "name": "firechat",
+  "description": "Small description for firechat goes here",
+  "main": "",
+  "authors": [
+    "Tushar Kamble <tushark26@csu.fullerton.edu>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "^3.9.0",
+    "emberfire": "^2.0.7"
+  }
+}
